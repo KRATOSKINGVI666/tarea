@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Conversor de Divisas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>Conversor de Divisas</h1>
+
+  <!-- NO usamos form para evitar recarga -->
+  <div class="contenedor">
+    <input type="number" id="cantidad" placeholder="Cantidad">
+
+    <select id="origen">
+      <option value="MXN">MXN</option>
+      <option value="USD">USD</option>
+      <option value="EUR">EUR</option>
+    </select>
+
+    <select id="destino">
+      <option value="USD">USD</option>
+      <option value="MXN">MXN</option>
+      <option value="EUR">EUR</option>
+    </select>
+
+    <!-- CLAVE: type="button" -->
+    <button type="button" onclick="convertir()">Convertir</button>
+
+    <p id="resultado"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
